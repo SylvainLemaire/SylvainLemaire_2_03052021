@@ -1,3 +1,50 @@
-.HAS {
-  text-align: right;
+body {
+  font-family: "raleway", sans-serif;
+}
+
+#bloc_page {
+  width: 95%;
+  margin: auto;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#logo img {
+  width: 95px;
+  height: 45px;
+  position: relative;
+  top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 70%;
+}
+
+nav li {
+  margin-right: 30%;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #0065fc;
+}
+
+.sous_titre h1 {
+  padding-top: 40px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.info i {
+  color: #0065fc;
 }

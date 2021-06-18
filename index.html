@@ -1,42 +1,103 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="style.css"/>
-        
-        <!-- titre de l'onglet -->
-        <title>Reservia</title>
-    </head>
-    
-    <body>
-        <!-- ancre hébergements et activités -->
-        <p class="HAS">
-          <a href="#Hébergements">Hébergements</a>
-          <a href="#Activités">Activités</a>
-        
-          S'inscrire
-        </p>
-        <!-- titre logo image -->
-        <p>
-            <img src="logo/Reservia@3x.png" alt="Logo Reservia"/>
-        </p>
-        
-        <!-- sous titre hébergement -->
-        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-        
-        <!-- lieu de l'hébergement -->
-        <p>En plein centre ville où en pleine nature</p>
-    
-        <!-- Hébergements -->
-        <h2 id="Hébergements">Hébergements à Marseille</h2>
-        
-        <!-- Activités -->
-        <h2 id="Activités">Activités à Marseille</h2>
-        
-    </body>
-</html>                                        
-        
+<html lang="fr">
+  <head>
+    <!--Encodage de tous les caractères et symboles de toutes les langues-->
+    <meta charset="UTF-8" />
+    <!--Zoom tablettes et mobiles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Relier au CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <!--Icônes-->
+    <script
+      src="https://kit.fontawesome.com/ee18a255ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Titre de l'onglet -->
+    <title>Reservia</title>
+    <!--Description du site web-->
+    <meta
+      name="description"
+      content="Trouvez votre hébergement pour des vacances de rêve, en plein centre ville ou en pleine nature"
+    />
+  </head>
 
-        
+  <body>
+    <div id="bloc_page">
+      <!--En-tête-->
+      <header>
+        <div id="header">
+          <!--Titre principal-->
+          <div id="logo">
+            <img src="images/logo/Reservia.svg" alt="Logo Reservia" />
+          </div>
 
-    
+          <!--Ancre hébergements, activités, s'inscrire-->
+          <nav>
+            <ul>
+              <li><a href="#hébergements">Hébergements</a></li>
+              <li><a href="#activités">Activités</a></li>
+              <li><a href="#">S'inscrire</a></li>
+            </ul>
+          </nav>
+
+          <!--Description du titre-->
+          <div class="sous_titre">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville où en pleine nature</p>
+          </div>
+
+          <!--Recherche hébergement-->
+          <form role="search">
+            <div>
+              <i class="fas fa-map-marker-alt"></i>
+              <input
+                type="search"
+                id="maRecherche"
+                name="q"
+                placeholder="Rechercher une ville"
+                aria-label="Rechercher une ville dans le contenu du site"
+              />
+
+              <button>
+                Rechercher <span><i class="fas fa-search"></i></span>
+              </button>
+            </div>
+          </form>
+
+          <!--Filtres-->
+          <div class="filter">
+            <p>
+              Filtres
+              <button class="button">
+                <i class="fas fa-money-bill-wave"></i> Économique
+              </button>
+              <button class="button">
+                <i class="fas fa-child"></i> Familial
+              </button>
+              <button class="button">
+                <i class="fas fa-heart"></i> Romantique
+              </button>
+              <button class="button">
+                <i class="fas fa-dog"></i> Animaux autorisés
+              </button>
+            </p>
+          </div>
+
+          <!--Information-->
+          <div class="info">
+            <span
+              ><i class="fas fa-info"></i> Plus de 500 logements sont
+              disponibles dans cette villes</span
+            >
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+
+  <footer></footer>
+</html>
