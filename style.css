@@ -1,50 +1,60 @@
-body {
-  font-family: "raleway", sans-serif;
+/*Police d'écriture*/
+
+html {
+    font-family: "raleway", sans-serif;
 }
 
-#bloc_page {
-  width: 95%;
-  margin: auto;
+/*Couleurs*/
+
+.color_1 {
+    color: #0065fc;
 }
+.color_2 {
+    color: #deebff;
+}
+.color_3 {
+    color: #f2f2f2;
+}
+.color_4 {
+    color: black;
+}
+
+/*Marge de la page*/
+
+#body {
+    width: 90%;
+    margin: auto;
+}
+
+/*En-tête: Titre principal et Liens de navigation*/
 
 #logo {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
+    padding-top: 40px;
+}
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex_around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+}
+.links_sizes {
+    width: 35%;
+}
+.decoration_none {
+    text-decoration: none;
+}
+.border_nav {
+    border-top: 2px solid #0065fc;
+    width: 160px;
+    height: 100px;
 }
 
-#logo img {
-  width: 95px;
-  height: 45px;
-  position: relative;
-  top: 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  position: absolute;
-  top: 20px;
-  left: 70%;
-}
-
-nav li {
-  margin-right: 30%;
-}
-
-a {
-  text-decoration: none;
-}
-a:hover {
-  color: #0065fc;
-}
-
-.sous_titre h1 {
-  padding-top: 40px;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.info i {
-  color: #0065fc;
-}
+/*En-tête: */
