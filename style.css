@@ -1,7 +1,10 @@
 /*Police d'écriture*/
 
 html {
-    font-family: "raleway", sans-serif;
+    font-family: Raleway, sans-serif;
+}
+.bold {
+    font-weight: bold;
 }
 
 /*Couleurs*/
@@ -53,8 +56,102 @@ html {
 }
 .border_nav {
     border-top: 2px solid #0065fc;
-    width: 160px;
     height: 100px;
+    width: 160px;
 }
 
-/*En-tête: */
+/*En-tête: Barre de recherche*/
+
+.title {
+    font-weight: bold;
+    margin-top: 30px;
+}
+.block_search {
+    width: 440px;
+}
+.icon_mapmarker {
+    background-color: #f2f2f2;
+    height: 50px;
+    width: 50px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.input_search {
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    border: 1px solid #f2f2f2;
+}
+.button_search {
+    background-color: #0065fc;
+    height: 50px;
+    width: 140px;
+    color: white;
+    font-weight: bold;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+}
+.button_search:hover {
+    background-color: #deebff;
+    color: #0065fc;
+}
+
+/*En-tête: Filtres*/
+
+.filters {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.filters h3 {
+    margin-right: 30px;
+    font-size: 1em;
+}
+.buttons_filters {
+    border: 3px solid #f2f2f2;
+    height: 40px;
+    margin-right: 40px;
+    border-radius: 50px;
+}
+.buttons_filters i {
+    color: #0065fc;
+    background-color: #deebff;
+    height: 43px;
+    width: 43px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3px;
+}
+.name_filter {
+    padding-left: 20px;
+    padding-right: 30px;
+    font-weight: bold;
+}
+.buttons_filters:hover {
+    background-color: #deebff;
+    color: #0065fc;
+    border-color: #deebff;
+    cursor: pointer;
+}
+.buttons_filters i:hover {
+    transform: rotate(360deg);
+    transition: 0.8s;
+}
+.info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.icone_info {
+    color: #0065fc;
+    border: 2px solid #f2f2f2;
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
