@@ -16,21 +16,21 @@
     </head>
 
     <body>
-        <div id="body">
+        <div class="body">
             <!--En-tête: Titre principal et liens de navigation-->
             <header>
-                <div id="header">
+                <div class="header">
                     <nav>
                         <div class="flex_between">
-                            <div id="logo">
+                            <div class="logo">
                                 <img src="images/logo/Reservia.svg" alt="Logo Reservia" />
                             </div>
                             <div class="flex_around links_sizes">
                                 <div class="flex_center border_nav">
-                                    <a class="color_1 decoration_none" href="#">Hébergements</a>
+                                    <a class="color_1 decoration_none" href="#link_lodging">Hébergements</a>
                                 </div>
                                 <div class="flex_center">
-                                    <a class="color_4 decoration_none" href="#">Activités</a>
+                                    <a class="color_4 decoration_none" href="#link_activities">Activités</a>
                                 </div>
                                 <div class="flex_center">
                                     <a class="color_1 decoration_none bold" href="#">S'inscrire</a>
@@ -84,6 +84,105 @@
                     </section>
                 </div>
             </header>
+            <!--Cartes-->
+            <section class="flex_around">
+                <!--Cartes "Hébergements à Marseille"-->
+                <div class="size_lodging block_lodging flex_column_around" id="link_lodging">
+                    <h2 class="bold">Hébergements à Marseille</h2>
+                    <div class="block_1 flex_between">
+                        <div class="back_lodging flex_column_center">
+                            <div class="img_lodging_1"></div>
+                            <div class="block_description_lodging">
+                                <h3 class="bold">Auberge la Cannebière</h3>
+                                <p>Nuit à partir de <span class="bold">25€</span></p>
+                                <div>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_3"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back_lodging flex_column_center">
+                            <div class="img_lodging_2"></div>
+                            <div class="block_description_lodging">
+                                <h3 class="bold">Hôtel du port</h3>
+                                <p>Nuit à partir de 52<span class="bold">€</span></p>
+                                <div>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back_lodging flex_column_center">
+                            <div class="img_lodging_3"></div>
+                            <div class="block_description_lodging">
+                                <h3 class="bold">Hôtel Les mouettes</h3>
+                                <p>Nuit à partir de 76<span class="bold">€</span></p>
+                                <div>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block_2 flex_between">
+                        <div class="back_lodging flex_column_center">
+                            <div class="img_lodging_4"></div>
+                            <div class="block_description_lodging">
+                                <h3 class="bold">Hôtel de la mer</h3>
+                                <p>Nuit à partir de 46<span class="bold">€</span></p>
+                                <div>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_3"></i>
+                                    <i class="fas fa-star color_3"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back_lodging flex_column_center">
+                            <div class="img_lodging_5"></div>
+                            <div class="block_description_lodging">
+                                <h3 class="bold">Auberge Le Panier</h3>
+                                <p>Nuit à partir de <span class="bold">23€</span></p>
+                                <div>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_3"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back_lodging flex_column_center">
+                            <div class="img_lodging_6"></div>
+                            <div class="block_description_lodging">
+                                <h3 class="bold">Hôtel chez Amina</h3>
+                                <p>Nuit à partir de 96<span class="bold">€</span></p>
+                                <div>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                    <i class="fas fa-star color_1"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                    <p class="bold">Afficher plus</p>
+                </div>
+                <!--Cartes "Les plus populaires"-->
+                <div class="size_popular"></div>
+            </section>
         </div>
     </body>
 </html>

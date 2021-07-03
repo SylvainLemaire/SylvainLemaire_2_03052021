@@ -24,14 +24,14 @@ html {
 
 /*Marge de la page*/
 
-#body {
+.body {
     width: 90%;
     margin: auto;
 }
 
 /*En-tête: Titre principal et Liens de navigation*/
 
-#logo {
+.logo {
     padding-top: 40px;
 }
 .flex_center {
@@ -47,6 +47,23 @@ html {
 .flex_between {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.flex_column_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex_column_around {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.flex_column_between {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .links_sizes {
     width: 35%;
@@ -154,4 +171,89 @@ html {
     width: 20px;
     border-radius: 25px;
     margin-right: 10px;
+}
+
+/*Cartes*/
+
+.size_lodging {
+    flex: 2;
+    background-color: #f2f2f2;
+    height: 650px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.size_popular {
+    flex: 1;
+    background-color: #f2f2f2;
+    height: 650px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.block_lodging {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.block_1 {
+    margin-bottom: 10px;
+}
+.block_2 {
+    margin-top: 10px;
+}
+.back_lodging {
+    width: 30%;
+    height: auto;
+    background-color: white;
+    padding: 1%;
+    border-radius: 20px;
+}
+.block_description_lodging {
+    width: 90%;
+}
+.img_lodging_1 {
+    background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+}
+.img_lodging_2 {
+    background-image: url("./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+}
+.img_lodging_3 {
+    background-image: url("./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+}
+.img_lodging_4 {
+    background-image: url("./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+}
+.img_lodging_5 {
+    background-image: url("./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+}
+.img_lodging_6 {
+    background-image: url("./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 20px 20px 0 0;
 }
