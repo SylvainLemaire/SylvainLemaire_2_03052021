@@ -1,4 +1,4 @@
-/***Normalize CSS***/
+/*****Normalize CSS*****/
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -351,14 +351,27 @@ template {
 [hidden] {
     display: none;
 }
+/************************************************************/
 
-/***Feuille de style CSS***/
+/*****Feuille de style CSS*****/
 
 /*Police d'écriture*/
-html {
+body {
     font-family: Raleway, sans-serif;
 }
 .bold {
+    font-weight: bold;
+}
+h1 {
+    font-size: 1.36em;
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+h2 {
+    font-size: 1.36em;
+    font-weight: bold;
+}
+h3 {
     font-weight: bold;
 }
 
@@ -375,6 +388,8 @@ html {
 .color_black {
     color: black;
 }
+
+/*Ombres*/
 .shadow_lodging_popular {
     box-shadow: rgb(230, 230, 230) 0 0 5px 5px;
 }
@@ -382,10 +397,19 @@ html {
     box-shadow: rgb(230, 230, 230) 0 0 10px 5px;
 }
 
+/*Décorations*/
+.decoration_none {
+    text-decoration: none;
+}
+
 /*Marge de la page*/
-.margin {
-    margin-left: 90px;
-    margin-right: 90px;
+header {
+    width: 1340px;
+    margin: auto;
+}
+main {
+    width: 1340px;
+    margin: auto;
 }
 
 /*Flexbox*/
@@ -420,41 +444,47 @@ html {
     justify-content: space-between;
     flex-direction: column;
 }
-.decoration_none {
-    text-decoration: none;
-}
+/***********************************************************/
 
-/*En-tête: Titre principal (logo)*/
-.logo {
+/*En-tête*/
+header {
+    display: flex;
+    justify-content: space-between;
     margin-top: 40px;
+    margin-bottom: 35px;
 }
 
-/*Liens de navigation*/
-.links_sizes {
-    width: 35%;
-}
-ul {
-    height: 100px;
+/*En-tête: Logo*/
+.logo {
     margin: 0;
 }
-li {
-    width: 150px;
-}
-.border_nav:hover {
-    border-top: 2px solid #0065fc;
-    height: 98px;
-}
-.color_hover:hover {
-    color: #0065fc;
-}
 
-/*En-tête: Barre de recherche*/
-.title {
-    margin-top: 30px;
+/*En-tête: Liens de navigation*/
+header nav {
+    margin-right: -45px;
 }
-.block_search {
-    width: 440px;
+header nav ul {
+    display: flex;
+    list-style-type: none;
 }
+header nav li {
+    margin-right: 65px;
+}
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+.signup {
+    color: #0065fc;
+    font-weight: bold;
+}
+header nav a:hover {
+    color: #0065fc;
+    border-top: solid 2px;
+}
+/***********************************************************/
+
+/*Barre de recherche*/
 .icon_mapmarker {
     background-color: #f2f2f2;
     height: 50px;
@@ -464,16 +494,16 @@ li {
 }
 .input_search {
     height: 50px;
-    width: 250px;
+    width: 235px;
     font-size: 18px;
     font-weight: bold;
     padding-left: 20px;
     border: 1px solid #f2f2f2;
 }
-.button_search {
+.button_submit {
     background-color: #0065fc;
     height: 50px;
-    width: 140px;
+    width: 135px;
     color: white;
     font-weight: bold;
     border-bottom-right-radius: 15px;
@@ -481,19 +511,25 @@ li {
     cursor: pointer;
     border: none;
 }
-.button_search:hover {
+.block_search {
+    width: 420px;
+    margin-top: 20px;
+}
+.button_submit:hover {
     background-color: #deebff;
     color: #0065fc;
 }
+/************************************************************/
 
-/*En-tête: Filtres*/
+/*Filtres*/
 .filters {
     display: flex;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 35px;
 }
 .filters h2 {
-    margin-right: 30px;
+    margin-right: 35px;
     font-size: 1em;
 }
 .buttons_filters {
@@ -519,6 +555,8 @@ li {
     padding-right: 20px;
     font-weight: bold;
 }
+
+/*Hover bouttons et icônes filtres*/
 .buttons_filters:hover {
     background-color: #deebff;
     color: #0065fc;
@@ -529,21 +567,27 @@ li {
     transform: rotate(360deg);
     transition: 0.8s;
 }
-.info {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-.icone_info {
+/************************************************************/
+
+/*Info*/
+.fa-info {
     color: #0065fc;
     border: 2px solid #f2f2f2;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     border-radius: 25px;
-    margin-right: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
 }
+.info {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+/*************************************************************/
 
-/*Background cartes hébergements et populaires*/
+/*Background cartes "Hébergements à Marseille"*/
 .size_lodging {
     background-color: #f2f2f2;
     width: 880px;
@@ -551,24 +595,26 @@ li {
     border-radius: 20px;
     margin-right: 20px;
 }
+
+/*Background cartes "Les plus populaires"*/
 .size_popular {
     background-color: #f2f2f2;
     width: 420px;
     height: 625px;
     border-radius: 20px;
 }
+/************************************************************/
 
-/*Cartes "Hébergements"*/
+/*Cartes "Hébergements à Marseille"*/
+.lodging {
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: -10px;
+}
 .block_lodging {
     padding-left: 40px;
     padding-right: 40px;
     width: 800px;
-}
-.block_1 {
-    margin-top: ;
-}
-.block_2 {
-    margin-top: 10px;
 }
 .back_lodging {
     width: 245px;
@@ -576,16 +622,35 @@ li {
     background-color: white;
     border-radius: 20px;
 }
-.back_lodging:hover {
-    background-color: #deebff;
-}
 .block_description_lodging {
     padding-left: 15px;
-    padding-top: 75px;
+    padding-top: 125px;
+    font-size: 0.85em;
 }
+.margin_title {
+    margin: 0;
+}
+.margin_price {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/*Icônes étoiles "Hébergements à Marseille"*/
+.star_lodging {
+    display: flex;
+    padding-left: 15px;
+}
+
+/*Hover cartes "Hébergements à Marseille"*/
 .block_description_lodging:hover {
     color: #0065fc;
 }
+.back_lodging:hover {
+    background-color: #deebff;
+}
+
+/*Images "Hébergements à Marseille"*/
 .img_lodging_1 {
     background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
     background-size: cover;
@@ -643,15 +708,23 @@ li {
 .figure_lodging {
     margin-bottom: 80px;
 }
+/************************************************************/
 
-/*Cartes "Les plus populaires*/
+/*Cartes "Les plus populaires"*/
+.popular {
+    margin-top: 25px;
+}
 .block_popular {
     padding-left: 40px;
     padding-right: 40px;
     width: 340px;
 }
 .block_popular_1_2 {
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.block_popular_3 {
+    margin-top: 10px;
 }
 .back_popular {
     width: 340px;
@@ -659,16 +732,28 @@ li {
     background-color: white;
     border-radius: 20px;
 }
-.back_popular:hover {
-    background-color: #deebff;
-}
 .block_description_popular {
-    width: 120%;
-    padding-left: 170px;
+    width: 140px;
+    padding-left: 145px;
+    font-size: 0.85em;
 }
+
+/*Icônes étoiles "Les plus populaires"*/
+.star_popular {
+    display: flex;
+    padding-left: 145px;
+    margin-top: 30px;
+}
+
+/*Hover cartes "Les plus populaires"*/
 .block_description_popular:hover {
     color: #0065fc;
 }
+.back_popular:hover {
+    background-color: #deebff;
+}
+
+/*Images "Les plus populaires"*/
 .img_popular_1 {
     background-image: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
     background-size: cover;
@@ -699,127 +784,189 @@ li {
     margin: auto;
     margin-left: 5px;
 }
+/***********************************************************/
 
-/*Cartes "Activités"*/
+/*Cartes "Activités à Marseille"*/
 .activities {
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 50px;
 }
+
+/*Cartes n°1 et n°4 "Activités à Marseille"*/
 .block_activities {
-    height: 450px;
+    height: 445px;
 }
 .back_activities {
-    width: 22%;
+    width: 305px;
+    height: 445px;
     border-radius: 20px;
-    height: 100%;
 }
+
+/*Cartes n°2, n°3 et n°5, n°6 "Activités à Marseille"*/
+.block_activities_2 {
+    width: 305px;
+    height: 445px;
+}
+.back_activities_2 {
+    width: 305px;
+    border-radius: 20px;
+}
+
+/*Hover cartes "Activités à Marseille"*/
 .back_activities:hover {
     background-color: #deebff;
     color: #0065fc;
 }
+.back_activities_2:hover {
+    background-color: #deebff;
+    color: #0065fc;
+}
+
+/*Noms des cartes "Activités à Marseille"*/
+.name_card_activities_1_4 {
+    padding: 390px 0 0 20px;
+    font-size: 1em;
+}
+.name_card_activities_2 {
+    padding: 185px 0 0 20px;
+    font-size: 1em;
+}
+.name_card_activities_3 {
+    padding: 110px 0 0 20px;
+    font-size: 1em;
+}
+.name_card_activities_5 {
+    padding: 140px 0 0 20px;
+    font-size: 1em;
+}
+.name_card_activities_6 {
+    padding: 155px 0 0 20px;
+    font-size: 1em;
+}
+
+/*Images "Activités à Marseille"*/
 .img_activities_1 {
     background-image: url("./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 400px;
+    width: 305px;
+    height: 390px;
     border-radius: 20px 20px 0 0;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     margin-top: 0;
-}
-.name_card_activities_1_4 {
-    padding: 395px 0 0 20px;
-}
-.name_card_activities_2_6 {
-    padding: 170px 0 0 20px;
-}
-.name_card_activities_3_5 {
-    padding: 120px 0 0 20px;
 }
 .img_activities_2 {
     background-image: url("./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 175px;
+    width: 305px;
+    height: 185px;
     border-radius: 20px 20px 0 0;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     margin-top: 0;
 }
 .img_activities_3 {
     background-image: url("./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 125px;
+    width: 305px;
+    height: 110px;
     border-radius: 20px 20px 0 0;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     margin-top: 0;
-}
-.back_activities_2 {
-    width: 100%;
-    border-radius: 20px;
-}
-.block_activities_2 {
-    width: 22%;
-    height: 450px;
-}
-.back_activities_2:hover {
-    background-color: #deebff;
-    color: #0065fc;
 }
 .img_activities_4 {
     background-image: url("./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 400px;
+    width: 305px;
+    height: 390px;
     border-radius: 20px 20px 0 0;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     margin-top: 0;
 }
 .img_activities_5 {
     background-image: url("./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 125px;
+    width: 305px;
+    height: 140px;
     border-radius: 20px 20px 0 0;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     margin-top: 0;
 }
 .img_activities_6 {
     background-image: url("./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 175px;
+    width: 305px;
+    height: 155px;
     border-radius: 20px 20px 0 0;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     margin-top: 0;
 }
+/***********************************************************/
 
-/*Pied de page, liens*/
+/*Pied de page*/
 footer {
     background-color: #f2f2f2;
     height: 220px;
     margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 90px;
+    padding-right: 405px;
 }
-.size_link_footer {
-    height: 150px;
+.footer_block_lodging {
+    padding-right: 70px;
 }
-.links_footer {
-    padding-top: 25px;
-    margin-left: 90px;
-    margin-right: 445px;
-}
-.links_footer_2 {
-    margin-left: -105px;
-}
-.link_footer_hover:hover {
-    color: #0065fc;
+footer h3 {
+    margin-top: 0px;
+    padding-top: 45px;
+    font-size: 1.1em;
 }
 
-/***Media queries***/
-@media screen {
+/*Pied de page: Liens*/
+footer ul {
+    padding-left: 0px;
+}
+footer li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+footer a:hover {
+    color: #0065fc;
+}
+/***********************************************************/
+
+/****Media queries****/
+
+@media screen and (max-width: 1360px) {
+    header {
+        margin-left: 40px;
+    }
+    header nav {
+        margin-right: 20px;
+    }
+    main {
+        margin-left: 40px;
+    }
+
+    section {
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    header nav {
+        margin-right: 250px;
+    }
+    .block {
+        flex-direction: column-reverse;
+    }
 }
