@@ -1,418 +1,7 @@
-/*****Normalize CSS*****/
-
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-   ========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-
-html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-}
-
-/* Sections
-     ========================================================================== */
-
-/**
-   * Remove the margin in all browsers.
-   */
-
-body {
-    margin: 0;
-}
-
-/**
-   * Render the `main` element consistently in IE.
-   */
-
-main {
-    display: block;
-}
-
-/**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
-
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
-
-/* Grouping content
-     ========================================================================== */
-
-/**
-   * 1. Add the correct box sizing in Firefox.
-   * 2. Show the overflow in Edge and IE.
-   */
-
-hr {
-    box-sizing: content-box; /* 1 */
-    height: 0; /* 1 */
-    overflow: visible; /* 2 */
-}
-
-/**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
-
-pre {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
-}
-
-/* Text-level semantics
-     ========================================================================== */
-
-/**
-   * Remove the gray background on active links in IE 10.
-   */
-
-a {
-    background-color: transparent;
-}
-
-/**
-   * 1. Remove the bottom border in Chrome 57-
-   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-   */
-
-abbr[title] {
-    border-bottom: none; /* 1 */
-    text-decoration: underline; /* 2 */
-    text-decoration: underline dotted; /* 2 */
-}
-
-/**
-   * Add the correct font weight in Chrome, Edge, and Safari.
-   */
-
-b,
-strong {
-    font-weight: bolder;
-}
-
-/**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
-
-code,
-kbd,
-samp {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
-}
-
-/**
-   * Add the correct font size in all browsers.
-   */
-
-small {
-    font-size: 80%;
-}
-
-/**
-   * Prevent `sub` and `sup` elements from affecting the line height in
-   * all browsers.
-   */
-
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sub {
-    bottom: -0.25em;
-}
-
-sup {
-    top: -0.5em;
-}
-
-/* Embedded content
-     ========================================================================== */
-
-/**
-   * Remove the border on images inside links in IE 10.
-   */
-
-img {
-    border-style: none;
-}
-
-/* Forms
-     ========================================================================== */
-
-/**
-   * 1. Change the font styles in all browsers.
-   * 2. Remove the margin in Firefox and Safari.
-   */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 1 */
-    line-height: 1.15; /* 1 */
-    margin: 0; /* 2 */
-}
-
-/**
-   * Show the overflow in IE.
-   * 1. Show the overflow in Edge.
-   */
-
-button,
-input {
-    /* 1 */
-    overflow: visible;
-}
-
-/**
-   * Remove the inheritance of text transform in Edge, Firefox, and IE.
-   * 1. Remove the inheritance of text transform in Firefox.
-   */
-
-button,
-select {
-    /* 1 */
-    text-transform: none;
-}
-
-/**
-   * Correct the inability to style clickable types in iOS and Safari.
-   */
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    -webkit-appearance: button;
-}
-
-/**
-   * Remove the inner border and padding in Firefox.
-   */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-    border-style: none;
-    padding: 0;
-}
-
-/**
-   * Restore the focus styles unset by the previous rule.
-   */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-    outline: 1px dotted ButtonText;
-}
-
-/**
-   * Correct the padding in Firefox.
-   */
-
-fieldset {
-    padding: 0.35em 0.75em 0.625em;
-}
-
-/**
-   * 1. Correct the text wrapping in Edge and IE.
-   * 2. Correct the color inheritance from `fieldset` elements in IE.
-   * 3. Remove the padding so developers are not caught out when they zero out
-   *    `fieldset` elements in all browsers.
-   */
-
-legend {
-    box-sizing: border-box; /* 1 */
-    color: inherit; /* 2 */
-    display: table; /* 1 */
-    max-width: 100%; /* 1 */
-    padding: 0; /* 3 */
-    white-space: normal; /* 1 */
-}
-
-/**
-   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
-   */
-
-progress {
-    vertical-align: baseline;
-}
-
-/**
-   * Remove the default vertical scrollbar in IE 10+.
-   */
-
-textarea {
-    overflow: auto;
-}
-
-/**
-   * 1. Add the correct box sizing in IE 10.
-   * 2. Remove the padding in IE 10.
-   */
-
-[type="checkbox"],
-[type="radio"] {
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
-}
-
-/**
-   * Correct the cursor style of increment and decrement buttons in Chrome.
-   */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-    height: auto;
-}
-
-/**
-   * 1. Correct the odd appearance in Chrome and Safari.
-   * 2. Correct the outline style in Safari.
-   */
-
-[type="search"] {
-    -webkit-appearance: textfield; /* 1 */
-    outline-offset: -2px; /* 2 */
-}
-
-/**
-   * Remove the inner padding in Chrome and Safari on macOS.
-   */
-
-[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-}
-
-/**
-   * 1. Correct the inability to style clickable types in iOS and Safari.
-   * 2. Change font properties to `inherit` in Safari.
-   */
-
-::-webkit-file-upload-button {
-    -webkit-appearance: button; /* 1 */
-    font: inherit; /* 2 */
-}
-
-/* Interactive
-     ========================================================================== */
-
-/*
-   * Add the correct display in Edge, IE 10+, and Firefox.
-   */
-
-details {
-    display: block;
-}
-
-/*
-   * Add the correct display in all browsers.
-   */
-
-summary {
-    display: list-item;
-}
-
-/* Misc
-     ========================================================================== */
-
-/**
-   * Add the correct display in IE 10+.
-   */
-
-template {
-    display: none;
-}
-
-/**
-   * Add the correct display in IE 10.
-   */
-
-[hidden] {
-    display: none;
-}
-/************************************************************/
-
 /*****Feuille de style CSS*****/
 
-/*Police d'écriture*/
-body {
-    font-family: Raleway, sans-serif;
-}
-.bold {
-    font-weight: bold;
-}
-h1 {
-    font-size: 1.36em;
-    margin-top: 20px;
-    margin-bottom: -5px;
-}
-h2 {
-    font-size: 1.36em;
-    font-weight: bold;
-}
-h3 {
-    font-weight: bold;
-}
-
-/*Couleurs*/
-.color_blue {
-    color: #0065fc;
-}
-.color_light_blue {
-    color: #deebff;
-}
-.color_light_grey {
-    color: #f2f2f2;
-}
-.color_black {
-    color: black;
-}
-
-/*Ombres*/
-.shadow_lodging_popular {
-    box-shadow: rgb(230, 230, 230) 0 0 5px 5px;
-}
-.shadow_activities {
-    box-shadow: rgb(230, 230, 230) 0 0 10px 5px;
-}
-
-/*Décorations*/
-.decoration_none {
-    text-decoration: none;
-}
-
-/*Marge de la page*/
-header {
-    width: 1340px;
-    margin: auto;
-}
-main {
-    width: 1340px;
-    margin: auto;
-}
-
 /*Flexbox*/
+
 .flex_center {
     display: flex;
     justify-content: center;
@@ -444,33 +33,95 @@ main {
     justify-content: space-between;
     flex-direction: column;
 }
+
+/*Police d'écriture*/
+
+body {
+    font-family: Raleway, sans-serif;
+}
+h1 {
+    font-size: 1.36em;
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+h2 {
+    font-size: 1.36em;
+    font-weight: bold;
+}
+h3 {
+    font-weight: bold;
+}
+.bold {
+    font-weight: bold;
+}
+
+/*Couleurs*/
+
+.color_blue {
+    color: #0065fc;
+}
+.color_light_blue {
+    color: #deebff;
+}
+.color_light_grey {
+    color: #f2f2f2;
+}
+.color_black {
+    color: black;
+}
+
+/*Ombres*/
+
+.shadow_lodging_popular {
+    box-shadow: rgb(230, 230, 230) 0 0 5px 5px;
+}
+.shadow_activities {
+    box-shadow: rgb(230, 230, 230) 0 0 10px 5px;
+}
+
+/*Décorations*/
+
+.decoration {
+    text-decoration: none;
+}
+
+/*Marge gauche et droite de la page*/
+
+header {
+    margin-left: 90px;
+    margin-right: 60px;
+}
+main {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
 /***********************************************************/
 
 /*En-tête*/
-header {
+
+nav figure {
+    margin: 0;
+    margin-top: 40px;
+}
+nav {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 35px;
-}
-
-/*En-tête: Logo*/
-.logo {
-    margin: 0;
 }
 
 /*En-tête: Liens de navigation*/
-header nav {
-    margin-right: -45px;
-}
-header nav ul {
+
+nav ul {
     display: flex;
     list-style-type: none;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
 }
-header nav li {
+nav li {
     margin-right: 65px;
 }
-header nav a {
+nav a {
     text-decoration: none;
     color: black;
 }
@@ -478,13 +129,15 @@ header nav a {
     color: #0065fc;
     font-weight: bold;
 }
-header nav a:hover {
-    color: #0065fc;
+nav a:hover {
     border-top: solid 2px;
+    color: #0065fc;
 }
+
 /***********************************************************/
 
 /*Barre de recherche*/
+
 .icon_mapmarker {
     background-color: #f2f2f2;
     height: 50px;
@@ -519,9 +172,11 @@ header nav a:hover {
     background-color: #deebff;
     color: #0065fc;
 }
+
 /************************************************************/
 
 /*Filtres*/
+
 .filters {
     display: flex;
     align-items: center;
@@ -557,6 +212,7 @@ header nav a:hover {
 }
 
 /*Hover bouttons et icônes filtres*/
+
 .buttons_filters:hover {
     background-color: #deebff;
     color: #0065fc;
@@ -567,9 +223,11 @@ header nav a:hover {
     transform: rotate(360deg);
     transition: 0.8s;
 }
+
 /************************************************************/
 
 /*Info*/
+
 .fa-info {
     color: #0065fc;
     border: 2px solid #f2f2f2;
@@ -585,10 +243,12 @@ header nav a:hover {
     margin-top: 20px;
     margin-bottom: 35px;
 }
+
 /*************************************************************/
 
 /*Background cartes "Hébergements à Marseille"*/
-.size_lodging {
+
+.background_lodging {
     background-color: #f2f2f2;
     width: 880px;
     height: 625px;
@@ -596,16 +256,8 @@ header nav a:hover {
     margin-right: 20px;
 }
 
-/*Background cartes "Les plus populaires"*/
-.size_popular {
-    background-color: #f2f2f2;
-    width: 420px;
-    height: 625px;
-    border-radius: 20px;
-}
-/************************************************************/
-
 /*Cartes "Hébergements à Marseille"*/
+
 .lodging {
     margin: 0;
     margin-top: 25px;
@@ -621,14 +273,15 @@ header nav a:hover {
     height: 200px;
     background-color: white;
     border-radius: 20px;
+    text-decoration: none;
 }
 .block_description_lodging {
     padding-left: 15px;
-    padding-top: 125px;
     font-size: 0.85em;
 }
 .margin_title {
     margin: 0;
+    margin-top: 5px;
 }
 .margin_price {
     margin: 0;
@@ -637,12 +290,28 @@ header nav a:hover {
 }
 
 /*Icônes étoiles "Hébergements à Marseille"*/
+
 .star_lodging {
     display: flex;
-    padding-left: 15px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 17px;
+    margin-left: 15px;
+}
+
+/*Images "Hébergements à Marseille"*/
+
+.img_lodging {
+    width: 235px;
+    height: 115px;
+    border-radius: 15px 15px 0 0;
+}
+.figure_lodging {
+    margin-bottom: 5px;
 }
 
 /*Hover cartes "Hébergements à Marseille"*/
+
 .block_description_lodging:hover {
     color: #0065fc;
 }
@@ -650,74 +319,21 @@ header nav a:hover {
     background-color: #deebff;
 }
 
-/*Images "Hébergements à Marseille"*/
-.img_lodging_1 {
-    background-image: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 235px;
-    height: 115px;
-    border-radius: 15px 15px 0 0;
-    margin: auto;
-}
-.img_lodging_2 {
-    background-image: url("./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 235px;
-    height: 115px;
-    border-radius: 15px 15px 0 0;
-    margin: auto;
-}
-.img_lodging_3 {
-    background-image: url("./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 235px;
-    height: 115px;
-    border-radius: 15px 15px 0 0;
-    margin: auto;
-}
-.img_lodging_4 {
-    background-image: url("./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 235px;
-    height: 115px;
-    border-radius: 15px 15px 0 0;
-    margin: auto;
-}
-.img_lodging_5 {
-    background-image: url("./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 235px;
-    height: 115px;
-    border-radius: 15px 15px 0 0;
-    margin: auto;
-}
-.img_lodging_6 {
-    background-image: url("./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 235px;
-    height: 115px;
-    border-radius: 15px 15px 0 0;
-    margin: auto;
-}
-.figure_lodging {
-    margin-bottom: 80px;
-}
 /************************************************************/
 
 /*Cartes "Les plus populaires"*/
+
 .popular {
     margin-top: 25px;
 }
-.block_popular {
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 340px;
+
+/*Background cartes "Les plus populaires"*/
+
+.background_popular {
+    background-color: #f2f2f2;
+    width: 420px;
+    height: 625px;
+    border-radius: 20px;
 }
 .block_popular_1_2 {
     margin-top: 10px;
@@ -733,19 +349,33 @@ header nav a:hover {
     border-radius: 20px;
 }
 .block_description_popular {
-    width: 140px;
-    padding-left: 145px;
     font-size: 0.85em;
+    margin-left: 20px;
+}
+.figure_popular {
+    margin: 0;
+    display: flex;
 }
 
 /*Icônes étoiles "Les plus populaires"*/
+
 .star_popular {
-    display: flex;
-    padding-left: 145px;
+    margin: 0;
     margin-top: 30px;
 }
 
+/*Images "Les plus populaires"*/
+
+.img_popular {
+    width: 125px;
+    height: 135px;
+    border-radius: 15px 0 0 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
 /*Hover cartes "Les plus populaires"*/
+
 .block_description_popular:hover {
     color: #0065fc;
 }
@@ -753,67 +383,112 @@ header nav a:hover {
     background-color: #deebff;
 }
 
-/*Images "Les plus populaires"*/
-.img_popular_1 {
-    background-image: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 125px;
-    height: 135px;
-    border-radius: 15px 0 0 15px;
-    margin: auto;
-    margin-left: 5px;
-}
-.img_popular_2 {
-    background-image: url("./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 125px;
-    height: 135px;
-    border-radius: 15px 0 0 15px;
-    margin: auto;
-    margin-left: 5px;
-}
-.img_popular_3 {
-    background-image: url("./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 125px;
-    height: 135px;
-    border-radius: 15px 0 0 15px;
-    margin: auto;
-    margin-left: 5px;
-}
 /***********************************************************/
 
 /*Cartes "Activités à Marseille"*/
+
 .activities {
     margin-top: 60px;
     margin-bottom: 50px;
 }
-
-/*Cartes n°1 et n°4 "Activités à Marseille"*/
-.block_activities {
+.block_activitie {
+    width: 1340px;
     height: 445px;
 }
-.back_activities {
-    width: 305px;
-    height: 445px;
-    border-radius: 20px;
+.block_1 {
+    width: 650px;
+    margin-right: 20px;
 }
-
-/*Cartes n°2, n°3 et n°5, n°6 "Activités à Marseille"*/
 .block_activities_2 {
     width: 305px;
     height: 445px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.block_2 {
+    width: 650px;
+}
+.back_activities_1 {
+    width: 305px;
+    height: 445px;
+    border-radius: 20px;
 }
 .back_activities_2 {
     width: 305px;
+    height: 240px;
+    border-radius: 20px;
+}
+.back_activities_3 {
+    width: 305px;
+    height: 165px;
+    border-radius: 20px;
+}
+.back_activities_4 {
+    width: 305px;
+    height: 445px;
+    border-radius: 20px;
+}
+.back_activities_5 {
+    width: 305px;
+    height: 195px;
+    border-radius: 20px;
+}
+.back_activities_6 {
+    width: 305px;
+    height: 210px;
     border-radius: 20px;
 }
 
+/*Noms des cartes "Activités à Marseille"*/
+
+.name_card_activities {
+    padding-left: 20px;
+    font-size: 1em;
+}
+
+/*Images "Activités à Marseille"*/
+
+.img_activities_1 {
+    width: 305px;
+    height: 390px;
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+}
+.img_activities_2 {
+    width: 305px;
+    height: 185px;
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+}
+.img_activities_3 {
+    width: 305px;
+    height: 110px;
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+}
+.img_activities_4 {
+    width: 305px;
+    height: 390px;
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+}
+.img_activities_5 {
+    width: 305px;
+    height: 140px;
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+}
+.img_activities_6 {
+    width: 305px;
+    height: 155px;
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+}
+
 /*Hover cartes "Activités à Marseille"*/
-.back_activities:hover {
+
+.back_activities_1:hover {
     background-color: #deebff;
     color: #0065fc;
 }
@@ -821,93 +496,27 @@ header nav a:hover {
     background-color: #deebff;
     color: #0065fc;
 }
-
-/*Noms des cartes "Activités à Marseille"*/
-.name_card_activities_1_4 {
-    padding: 390px 0 0 20px;
-    font-size: 1em;
+.back_activities_3:hover {
+    background-color: #deebff;
+    color: #0065fc;
 }
-.name_card_activities_2 {
-    padding: 185px 0 0 20px;
-    font-size: 1em;
+.back_activities_4:hover {
+    background-color: #deebff;
+    color: #0065fc;
 }
-.name_card_activities_3 {
-    padding: 110px 0 0 20px;
-    font-size: 1em;
+.back_activities_5:hover {
+    background-color: #deebff;
+    color: #0065fc;
 }
-.name_card_activities_5 {
-    padding: 140px 0 0 20px;
-    font-size: 1em;
-}
-.name_card_activities_6 {
-    padding: 155px 0 0 20px;
-    font-size: 1em;
+.back_activities_6:hover {
+    background-color: #deebff;
+    color: #0065fc;
 }
 
-/*Images "Activités à Marseille"*/
-.img_activities_1 {
-    background-image: url("./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 305px;
-    height: 390px;
-    border-radius: 20px 20px 0 0;
-    margin-bottom: 55px;
-    margin-top: 0;
-}
-.img_activities_2 {
-    background-image: url("./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 305px;
-    height: 185px;
-    border-radius: 20px 20px 0 0;
-    margin-bottom: 55px;
-    margin-top: 0;
-}
-.img_activities_3 {
-    background-image: url("./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 305px;
-    height: 110px;
-    border-radius: 20px 20px 0 0;
-    margin-bottom: 55px;
-    margin-top: 0;
-}
-.img_activities_4 {
-    background-image: url("./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 305px;
-    height: 390px;
-    border-radius: 20px 20px 0 0;
-    margin-bottom: 55px;
-    margin-top: 0;
-}
-.img_activities_5 {
-    background-image: url("./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 305px;
-    height: 140px;
-    border-radius: 20px 20px 0 0;
-    margin-bottom: 55px;
-    margin-top: 0;
-}
-.img_activities_6 {
-    background-image: url("./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 305px;
-    height: 155px;
-    border-radius: 20px 20px 0 0;
-    margin-bottom: 55px;
-    margin-top: 0;
-}
 /***********************************************************/
 
 /*Pied de page*/
+
 footer {
     background-color: #f2f2f2;
     height: 220px;
@@ -917,16 +526,17 @@ footer {
     padding-left: 90px;
     padding-right: 405px;
 }
-.footer_block_lodging {
-    padding-right: 70px;
-}
 footer h3 {
     margin-top: 0px;
     padding-top: 45px;
     font-size: 1.1em;
 }
+.footer_block_lodging {
+    padding-right: 70px;
+}
 
 /*Pied de page: Liens*/
+
 footer ul {
     padding-left: 0px;
 }
@@ -942,31 +552,133 @@ footer a {
 footer a:hover {
     color: #0065fc;
 }
+
 /***********************************************************/
 
-/****Media queries****/
+/****Media Queries****/
 
-@media screen and (max-width: 1360px) {
-    header {
-        margin-left: 40px;
-    }
-    header nav {
-        margin-right: 20px;
-    }
-    main {
-        margin-left: 40px;
-    }
+@media screen and (max-width: 1480px) {
+    /*Cartes "Les plus populaires" */
 
-    section {
-        margin-right: 60px;
-    }
-}
-
-@media screen and (max-width: 1320px) {
-    header nav {
-        margin-right: 250px;
-    }
-    .block {
+    .lodging_popular {
         flex-direction: column-reverse;
+    }
+    .background_popular {
+        width: 1180px;
+        height: 270px;
+        margin-bottom: 30px;
+    }
+    .card_popular {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .block_popular_3 {
+        margin-bottom: 20px;
+    }
+    .popular {
+        justify-content: space-between;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    /*Cartes "Hébergements à Marseille" */
+
+    .background_lodging {
+        width: 1100px;
+        margin: 0;
+    }
+    .back_lodging {
+        width: 340px;
+    }
+    .img_lodging {
+        width: 330px;
+    }
+
+    /*Cartes "Activités à Marseille" */
+
+    .block_activities {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .block_1 {
+        width: 1180px;
+        justify-content: space-between;
+    }
+    .block_activities_2 {
+        width: 760px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .back_activities_1 {
+        width: 340px;
+        height: 445px;
+        border-radius: 20px;
+    }
+    .img_activities_1 {
+        width: 340px;
+        height: 390px;
+        border-radius: 20px 20px 0 0;
+        margin: 0;
+    }
+    .back_activities_2 {
+        width: 340px;
+        height: 445px;
+        border-radius: 20px;
+    }
+    .img_activities_2 {
+        width: 340px;
+        height: 390px;
+        border-radius: 20px 20px 0 0;
+        margin: 0;
+    }
+    .back_activities_3 {
+        width: 340px;
+        height: 445px;
+        border-radius: 20px;
+    }
+    .img_activities_3 {
+        width: 340px;
+        height: 390px;
+        border-radius: 20px 20px 0 0;
+        margin: 0;
+    }
+    .block_2 {
+        width: 1180px;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+    .back_activities_4 {
+        width: 340px;
+        height: 445px;
+        border-radius: 20px;
+    }
+    .img_activities_4 {
+        width: 340px;
+        height: 390px;
+        border-radius: 20px 20px 0 0;
+        margin: 0;
+    }
+    .back_activities_5 {
+        width: 340px;
+        height: 445px;
+        border-radius: 20px;
+    }
+    .img_activities_5 {
+        width: 340px;
+        height: 390px;
+        border-radius: 20px 20px 0 0;
+        margin: 0;
+    }
+    .back_activities_6 {
+        width: 340px;
+        height: 445px;
+        border-radius: 20px;
+    }
+    .img_activities_6 {
+        width: 340px;
+        height: 390px;
+        border-radius: 20px 20px 0 0;
+        margin: 0;
     }
 }

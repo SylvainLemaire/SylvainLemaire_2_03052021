@@ -3,41 +3,47 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!--Titre de l'onglet-->
+
         <title>Reservia</title>
-        <!--Police d'écriture-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
-        <!--Icônes-->
-        <script src="https://kit.fontawesome.com/ee18a255ca.js" crossorigin="anonymous"></script>
-        <!--Description du site web-->
+
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style" />
+        <link rel="preload" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" as="style" />
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway" />
+        <link rel="preload" href="style.css" />
+
         <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve, en plein centre ville ou en pleine nature" />
-        <!--Normalize CSS, feuille de style CSS, media queries-->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
         <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
-        <!--En-tête: Logo-->
         <header>
-            <figure class="logo">
-                <img src="images/logo/Reservia.svg" alt="Logo Reservia" />
-            </figure>
-
-            <!--En-tête: Liens de navigation-->
             <nav>
+                <!--Logo-->
+
+                <figure>
+                    <img src="images/logo/Reservia.svg" alt="Logo Reservia" />
+                </figure>
+
+                <!--Liens de navigation-->
+
                 <ul>
                     <li><a href="#link_lodging">Hébergements</a></li>
                     <li><a href="#link_activities">Activités</a></li>
                     <li><a class="signup" href="#">S'inscrire</a></li>
                 </ul>
             </nav>
-        </header>
 
-        <main>
             <!--Titre-->
+
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
             <!--Barre de recherche-->
+
             <form role="search" class="flex_around block_search">
                 <i class="fas fa-map-marker-alt icon_mapmarker flex_center"></i>
                 <input class="input_search flex_center" type="search" name="q" value="Marseille, France" aria-label="Rechercher une ville" />
@@ -45,10 +51,12 @@
             </form>
 
             <!--Filtres-->
+
             <section class="filters">
                 <h2>Filtres</h2>
 
                 <!--Bouttons filtres-->
+
                 <button class="buttons_filters flex_center">
                     <i class="fas fa-money-bill-wave"></i>
                     <span class="name_filter">Économique</span>
@@ -71,283 +79,333 @@
             </section>
 
             <!--"Info"-->
-            <p class="info"><i class="fas fa-info fa-xs"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
+            <p class="info"><i class="fas fa-info fa-xs"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+        </header>
+
+        <main>
             <!--Cartes "Hébergements à Marseille", "Les plus populaires"-->
-            <section class="block flex_between">
+
+            <section class="lodging_popular flex_between">
                 <!--Cartes"Hébergements à Marseille"-->
-                <div class="size_lodging block_lodging flex_column_around" id="link_lodging">
+
+                <article class="background_lodging block_lodging flex_column_around" id="link_lodging">
                     <h2 class="lodging">Hébergements à Marseille</h2>
 
                     <!--Block 1 (3 cartes)-->
-                    <div class="block_1 flex_between">
+
+                    <div class="flex_between">
                         <!--Carte "Auberge la Cannebière"-->
-                        <a class="back_lodging flex_column_center shadow_lodging_popular decoration_none" href="#">
-                            <figure class="img_lodging_1 figure_lodging">
+
+                        <a class="back_lodging flex_column_center shadow_lodging_popular" href="#">
+                            <figure class="figure_lodging">
+                                <img class="img_lodging" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" />
                                 <figcaption class="block_description_lodging color_black">
                                     <h3 class="margin_title">Auberge la Cannebière</h3>
-                                    <p class="margin_price">Nuit à partir de <span class="bold">25€</span></p>
+                                    <p class="margin_price">Nuit à partir de <b class="bold">25€</b></p>
                                 </figcaption>
-                                <div class="star_lodging">
+                                <figure class="star_lodging">
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_light_grey"></i>
-                                </div>
+                                </figure>
                             </figure>
                         </a>
 
                         <!--Carte "Hôtel du port"-->
+
                         <a class="back_lodging flex_column_center shadow_lodging_popular decoration_none" href="#">
-                            <figure class="img_lodging_2 figure_lodging">
+                            <figure class="figure_lodging">
+                                <img class="img_lodging" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" />
                                 <figcaption class="block_description_lodging color_black">
                                     <h3 class="margin_title">Hôtel du port</h3>
-                                    <p class="margin_price">Nuit à partir de 52<span class="bold">€</span></p>
+                                    <p class="margin_price">Nuit à partir de 52<b class="bold">€</b></p>
                                 </figcaption>
-                                <div class="star_lodging">
+                                <figure class="star_lodging">
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
-                                </div>
+                                </figure>
                             </figure>
                         </a>
 
                         <!--Carte "Hôtel Les mouettes"-->
+
                         <a class="back_lodging flex_column_center shadow_lodging_popular decoration_none" href="#">
-                            <figure class="img_lodging_3 figure_lodging">
+                            <figure class="figure_lodging">
+                                <img class="img_lodging" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" />
                                 <figcaption class="block_description_lodging color_black">
                                     <h3 class="margin_title">Hôtel Les mouettes</h3>
-                                    <p class="margin_price">Nuit à partir de 76<span class="bold">€</span></p>
+                                    <p class="margin_price">Nuit à partir de 76<b class="bold">€</b></p>
                                 </figcaption>
-                                <div class="star_lodging">
+                                <figure class="star_lodging">
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_light_grey"></i>
-                                </div>
+                                </figure>
                             </figure>
                         </a>
                     </div>
 
                     <!--Block 2 (3 cartes)-->
-                    <div class="block_2 flex_between">
+
+                    <div class="flex_between">
                         <!--Carte "Hôtel de la mer"-->
+
                         <a class="back_lodging flex_column_center shadow_lodging_popular decoration_none" href="#">
-                            <figure class="img_lodging_4 figure_lodging">
+                            <figure class="figure_lodging">
+                                <img class="img_lodging" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" />
                                 <figcaption class="block_description_lodging color_black">
                                     <h3 class="margin_title">Hôtel de la mer</h3>
-                                    <p class="margin_price">Nuit à partir de 46<span class="bold">€</span></p>
+                                    <p class="margin_price">Nuit à partir de 46<b class="bold">€</b></p>
                                 </figcaption>
-                                <div class="star_lodging">
+                                <figure class="star_lodging">
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_light_grey"></i>
                                     <i class="fas fa-star fa-xs color_light_grey"></i>
-                                </div>
+                                </figure>
                             </figure>
                         </a>
 
                         <!--Carte Auberge Le Panier-->
+
                         <a class="back_lodging flex_column_center shadow_lodging_popular decoration_none" href="#">
-                            <figure class="img_lodging_5 figure_lodging">
+                            <figure class="figure_lodging">
+                                <img class="img_lodging" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" />
                                 <figcaption class="block_description_lodging color_black">
                                     <h3 class="margin_title">Auberge Le Panier</h3>
-                                    <p class="margin_price">Nuit à partir de <span class="bold">23€</span></p>
+                                    <p class="margin_price">Nuit à partir de <b class="bold">23€</b></p>
                                 </figcaption>
-                                <div class="star_lodging">
+                                <figure class="star_lodging">
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_light_grey"></i>
-                                </div>
+                                </figure>
                             </figure>
                         </a>
 
                         <!--Carte "Hôtel chez Amina"-->
+
                         <a class="back_lodging flex_column_center shadow_lodging_popular decoration_none" href="#">
-                            <figure class="img_lodging_6 figure_lodging">
+                            <figure class="figure_lodging">
+                                <img class="img_lodging" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" />
                                 <figcaption class="block_description_lodging color_black">
                                     <h3 class="margin_title">Hôtel chez Amina</h3>
-                                    <p class="margin_price">Nuit à partir de 96<span class="bold">€</span></p>
+                                    <p class="margin_price">Nuit à partir de 96<b class="bold">€</b></p>
                                 </figcaption>
-                                <div class="star_lodging">
+                                <figure class="star_lodging">
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
                                     <i class="fas fa-star fa-xs color_blue"></i>
-                                </div>
+                                </figure>
                             </figure>
                         </a>
                     </div>
 
                     <!--"Afficher plus"-->
+
                     <p class="bold">Afficher plus</p>
-                </div>
+                </article>
 
                 <!--Cartes "Les plus populaires"-->
-                <aside class="size_popular block_popular">
-                    <div class="popular flex_between">
+
+                <section class="background_popular">
+                    <div class="popular flex_around">
                         <h2>Les plus populaires</h2>
-                        <div><i class="fas fa-chart-line fa-2x"></i></div>
+                        <i class="fas fa-chart-line fa-2x"></i>
                     </div>
-                    <div class="flex_column_around">
+                    <div class="flex_column_center card_popular">
                         <!--Carte "Hôtel Le soleil du matin"-->
-                        <a class="flex_center back_popular block_popular_1_2 shadow_lodging_popular decoration_none" href="#">
-                            <figure class="img_popular_1">
+
+                        <a class="back_popular block_popular_1_2 shadow_lodging_popular decoration" href="#">
+                            <figure class="figure_popular">
+                                <img class="img_popular" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" />
                                 <figcaption class="block_description_popular color_black">
-                                    <h3>Hôtel Le soleil du matin</h3>
-                                    <p>Nuit à partir de 128<span class="bold">€</span></p>
+                                    <h3>Hôtel Le soleil du <br />matin</h3>
+                                    <p>Nuit à partir de 128<b class="bold">€</b></p>
+                                    <figure class="star_popular">
+                                        <i class="fas fa-star fa-xs color_blue"></i>
+                                        <i class="fas fa-star fa-xs color_blue"></i>
+                                        <i class="fas fa-star fa-xs color_blue"></i>
+                                        <i class="fas fa-star fa-xs color_blue"></i>
+                                        <i class="fas fa-star fa-xs color_blue"></i>
+                                    </figure>
                                 </figcaption>
-                                <div class="star_popular">
-                                    <i class="fas fa-star fa-xs color_blue"></i>
-                                    <i class="fas fa-star fa-xs color_blue"></i>
-                                    <i class="fas fa-star fa-xs color_blue"></i>
-                                    <i class="fas fa-star fa-xs color_blue"></i>
-                                    <i class="fas fa-star fa-xs color_blue"></i>
-                                </div>
                             </figure>
                         </a>
 
                         <!--Carte "Au coeur de l'eau Chambres d'hôtes"-->
-                        <a class="flex_center back_popular block_popular_1_2 shadow_lodging_popular decoration_none" href="#">
-                            <figure class="img_popular_2">
+
+                        <a class="back_popular block_popular_1_2 shadow_lodging_popular decoration" href="#">
+                            <figure class="figure_popular">
+                                <img class="img_popular" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" />
                                 <figcaption class="block_description_popular color_black">
-                                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                                    <p>Nuit à partir de 71<span class="bold">€</span></p>
+                                    <h3>Au coeur de l'eau <br />Chambres d'hôtes</h3>
+                                    <p>Nuit à partir de 71<b class="bold">€</b></p>
+                                    <figure class="star_popular">
+                                        <i class="fas fa-star fa-xs color_blue"></i>
+                                        <i class="fas fa-star fa-xs color_blue"></i>
+                                        <i class="fas fa-star fa-xs color_blue"></i>
+                                        <i class="fas fa-star fa-xs color_blue"></i>
+                                        <i class="fas fa-star fa-xs color_blue"></i>
+                                    </figure>
                                 </figcaption>
-                                <div class="star_popular">
-                                    <i class="fas fa-star fa-xs color_blue"></i>
-                                    <i class="fas fa-star fa-xs color_blue"></i>
-                                    <i class="fas fa-star fa-xs color_blue"></i>
-                                    <i class="fas fa-star fa-xs color_blue"></i>
-                                    <i class="fas fa-star fa-xs color_blue"></i>
-                                </div>
                             </figure>
                         </a>
 
                         <!--Carte "Hôtel Tout bleu et Blanc"-->
-                        <a class="flex_center back_popular block_popular_3 shadow_lodging_popular decoration_none" href="#">
-                            <figure class="img_popular_3">
+
+                        <a class="back_popular block_popular_3 shadow_lodging_popular decoration" href="#">
+                            <figure class="figure_popular">
+                                <img class="img_popular" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="" />
                                 <figcaption class="block_description_popular color_black">
-                                    <h3>Hôtel Tout bleu et Blanc</h3>
-                                    <p>Nuit à partir de 68<span class="bold">€</span></p>
+                                    <h3>Hôtel Tout bleu et <br />Blanc</h3>
+                                    <p>Nuit à partir de 68<b class="bold">€</b></p>
+                                    <figure class="star_popular">
+                                        <i class="fas fa-star fa-xs color_blue"></i>
+                                        <i class="fas fa-star fa-xs color_blue"></i>
+                                        <i class="fas fa-star fa-xs color_blue"></i>
+                                        <i class="fas fa-star fa-xs color_blue"></i>
+                                        <i class="fas fa-star fa-xs color_light_grey"></i>
+                                    </figure>
                                 </figcaption>
-                                <div class="star_popular">
-                                    <i class="fas fa-star fa-xs color_blue"></i>
-                                    <i class="fas fa-star fa-xs color_blue"></i>
-                                    <i class="fas fa-star fa-xs color_blue"></i>
-                                    <i class="fas fa-star fa-xs color_blue"></i>
-                                    <i class="fas fa-star fa-xs color_light_grey"></i>
-                                </div>
                             </figure>
                         </a>
                     </div>
-                </aside>
+                </section>
             </section>
 
             <!--Cartes "Activités à Marseille"-->
-            <section class="activities" id="link_activities">
+
+            <article class="activities" id="link_activities">
                 <h2>Activités à Marseille</h2>
                 <div class="block_activities flex_between">
                     <!--Carte "Vieux Port"-->
-                    <a class="back_activities flex_column_center shadow_activities decoration_none color_black" href="#">
-                        <figure class="img_activities_1">
-                            <figcaption>
-                                <h3 class="name_card_activities_1_4">Vieux Port</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
 
-                    <!--Block cartes "Fort de Pomègues" et "Îles du Frioul"-->
-                    <div class="block_activities_2 flex_column_between">
-                        <!--Carte "Fort de Pomègues"-->
-                        <a class="back_activities_2 flex_column_center shadow_activities decoration_none color_black" href="#">
-                            <figure class="img_activities_2">
+                    <div class="block_1 flex_between">
+                        <a class="back_activities_1 flex_column_center shadow_activities decoration color_black" href="#">
+                            <figure>
+                                <img class="img_activities_1" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" />
                                 <figcaption>
-                                    <h3 class="name_card_activities_2">Fort de Pomègues</h3>
+                                    <h3 class="name_card_activities">Vieux Port</h3>
                                 </figcaption>
                             </figure>
                         </a>
 
-                        <!--Carte "île du Frioul"-->
-                        <a class="back_activities_2 flex_column_center shadow_activities decoration_none color_black" href="#">
-                            <figure class="img_activities_3">
-                                <figcaption>
-                                    <h3 class="name_card_activities_3">Îles du Frioul</h3>
-                                </figcaption>
-                            </figure>
-                        </a>
+                        <!--Block cartes "Fort de Pomègues" et "Îles du Frioul"-->
+
+                        <div class="block_activities_2">
+                            <!--Carte "Fort de Pomègues"-->
+
+                            <a class="back_activities_2 flex_column_center shadow_activities decoration color_black" href="#">
+                                <figure>
+                                    <img class="img_activities_2" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" />
+                                    <figcaption>
+                                        <h3 class="name_card_activities">Fort de Pomègues</h3>
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                            <!--Carte "île du Frioul"-->
+
+                            <a class="back_activities_3 flex_column_center shadow_activities decoration color_black" href="#">
+                                <figure>
+                                    <img class="img_activities_3" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" />
+                                    <figcaption>
+                                        <h3 class="name_card_activities">Îles du Frioul</h3>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
                     </div>
 
                     <!--Carte "Parc National des Calanques"-->
-                    <a class="back_activities flex_column_center shadow_activities decoration_none color_black" href="#">
-                        <figure class="img_activities_4">
-                            <figcaption>
-                                <h3 class="name_card_activities_1_4">Parc National des Calanques</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
 
-                    <!--Block cartes "Notre Dame de la Garde" et "Parc Longchamp"-->
-                    <div class="block_activities_2 flex_column_between">
-                        <!--Carte "Notre-Dame-de-la-Garde"-->
-                        <a class="back_activities_2 flex_column_center shadow_activities decoration_none color_black" href="#">
-                            <figure class="img_activities_5">
+                    <div class="block_2 flex_between">
+                        <a class="back_activities_4 flex_column_center shadow_activities decoration color_black" href="#">
+                            <figure>
+                                <img class="img_activities_4" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" />
                                 <figcaption>
-                                    <h3 class="name_card_activities_5">Notre-Dame-de-la-Garde</h3>
+                                    <h3 class="name_card_activities">Parc National des Calanques</h3>
                                 </figcaption>
                             </figure>
                         </a>
 
-                        <!--Carte "Parc Longchamp"-->
-                        <a class="back_activities_2 flex_column_center shadow_activities decoration_none color_black" href="#">
-                            <figure class="img_activities_6">
-                                <figcaption>
-                                    <h3 class="name_card_activities_6">Parc Longchamp</h3>
-                                </figcaption>
-                            </figure>
-                        </a>
+                        <!--Block cartes "Notre Dame de la Garde" et "Parc Longchamp"-->
+
+                        <div class="block_activities_2 flex_column_between">
+                            <!--Carte "Notre-Dame-de-la-Garde"-->
+
+                            <a class="back_activities_5 flex_column_center shadow_activities decoration color_black" href="#">
+                                <figure>
+                                    <img class="img_activities_5" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" />
+                                    <figcaption>
+                                        <h3 class="name_card_activities">Notre-Dame-de-la-Garde</h3>
+                                    </figcaption>
+                                </figure>
+                            </a>
+
+                            <!--Carte "Parc Longchamp"-->
+
+                            <a class="back_activities_6 flex_column_center shadow_activities decoration color_black" href="#">
+                                <figure>
+                                    <img class="img_activities_6" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="" />
+                                    <figcaption>
+                                        <h3 class="name_card_activities">Parc Longchamp</h3>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </article>
         </main>
 
         <!--Pied de page, liens-->
+
         <footer>
             <!--Liens "A propos"-->
-            <div>
+
+            <section>
                 <h3>A propos</h3>
                 <ul>
                     <li><a href="#">Fonctionnement du site</a></li>
                     <li><a href="#">Conditions générales de ventes</a></li>
                     <li><a href="#">Données et confidentialité</a></li>
                 </ul>
-            </div>
+            </section>
 
             <!--Liens "Nos hébergements"-->
-            <div class="footer_block_lodging">
+
+            <section class="footer_block_lodging">
                 <h3>Nos hébergements</h3>
                 <ul>
                     <li><a href="#">Charte qualité</a></li>
                     <li><a href="#">Soumettre votre hôtel</a></li>
                 </ul>
-            </div>
+            </section>
 
             <!--Liens "Assistance"-->
-            <div>
+
+            <section>
                 <h3>Assistance</h3>
                 <ul>
                     <li><a href="#">Centre d'aide</a></li>
                     <li><a href="#">Nous contacter</a></li>
                 </ul>
-            </div>
+            </section>
         </footer>
     </body>
 </html>
