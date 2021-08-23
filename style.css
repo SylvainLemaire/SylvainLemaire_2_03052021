@@ -1021,27 +1021,13 @@ footer a:hover {
     }
 }
 
-/***********************************************************/
+/*******************************************************************/
 
-/****Media Queries (max-width: 576px)****/
+/**********Media Queries (max-width: 576px)**********/
 
 @media screen and (max-width: 576px) {
-    .filters {
-        margin-top: 0;
-    }
-    .filters_flex_column {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .buttons_filters {
-        margin-right: 15px;
-    }
-    .name_filter {
-        font-size: 1rem;
-    }
-    .button_submit {
-        display: none;
-    }
+    /*Barre de Recherche (max-width: 576px)*/
+
     form {
         width: 335px;
         margin-top: 35px;
@@ -1050,8 +1036,15 @@ footer a:hover {
         border: solid 1px #f2f2f2;
         border-radius: 15px;
     }
+    form button:hover {
+        background-color: #deebff;
+        color: #0065fc;
+    }
     .input_search {
         border: none;
+    }
+    .button_submit {
+        display: none;
     }
     .small_button_submit {
         display: initial;
@@ -1064,21 +1057,37 @@ footer a:hover {
         color: white;
         cursor: pointer;
     }
-    form button:hover {
-        background-color: #deebff;
-        color: #0065fc;
-    }
-    .info {
-        margin-top: 0;
-    }
+
+    /*Titre "Hébergements à Marseille" (max-width: 576px)*/
+
     .lodging_title {
         padding-left: 5px;
     }
+
+    /*Filtres (max-width: 576px)*/
+
+    .filters_flex_column {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .name_filter {
+        font-size: 1rem;
+    }
+    .buttons_filters {
+        margin-right: 15px;
+    }
+
+    /*Margin-top Filtres et Info (max-width: 576px)*/
+
+    .filters,
+    .info {
+        margin-top: 0;
+    }
 }
 
-/***********************************************************/
+/*********************************************************************/
 
-/****Media Queries (max-width: 375px)****/
+/**********Media Queries (max-width: 375px)**********/
 
 @media screen and (max-width: 375px) {
     /*Barre de Recherche (max-width: 375px)*/
