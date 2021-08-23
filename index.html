@@ -40,15 +40,15 @@
             <!--Titre-->
 
             <h1 class="bold">Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
+            <p class="text_search">En plein centre ville ou en pleine nature</p>
 
             <!--Barre de recherche-->
 
-            <form role="search" class="flex_around block_search">
+            <form role="search">
                 <i class="fas fa-map-marker-alt icon_mapmarker flex_center"></i>
-                <input class="input_search flex_center" type="search" name="q" value="Marseille, France" aria-label="Rechercher une ville" />
+                <input class="input_search" type="search" name="q" value="Marseille, France" aria-label="Rechercher une ville" />
                 <input class="button_submit flex_center" type="submit" value="Rechercher" />
-                <button class="flex_center" type="submit"><i class="fas fa-search"></i></button>
+                <button class="small_button_submit flex_center" type="submit"><i class="fas fa-search"></i></button>
             </form>
 
             <!--Filtres-->
@@ -59,7 +59,7 @@
                 <!--Bouttons filtres-->
 
                 <div class="filters_flex filters_column">
-                    <div class="filters_flex">
+                    <div class="filters_flex column">
                         <button class="buttons_filters flex_center">
                             <i class="fas fa-money-bill-wave flex_center"></i>
                             <span class="name_filter">Économique</span>
@@ -85,8 +85,10 @@
             </section>
 
             <!--"Info"-->
-
-            <p class="info"><i class="fas fa-info fa-xs"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            <section class="info">
+                <p class="icon_info"><i class="fas fa-info fa-xs"></i></p>
+                <p class="text_info">Plus de 500 logements sont disponibles dans cette ville</p>
+            </section>
         </header>
 
         <!--Cartes "Hébergements à Marseille", "Les plus populaires"-->
@@ -221,7 +223,7 @@
 
                 <!--"Afficher plus"-->
 
-                <p class="lodging_plus bold">Afficher plus</p>
+                <a class="lodging_plus decoration color_black bold" href="#">Afficher plus</a>
             </article>
 
             <!--Cartes "Les plus populaires"-->
@@ -229,7 +231,7 @@
             <section class="background_popular">
                 <div class="popular flex_between">
                     <h2 class="bold">Les plus populaires</h2>
-                    <i class="fas fa-chart-line fa-2x"></i>
+                    <i class="fas fa-chart-line"></i>
                 </div>
                 <div class="flex_column_center card_popular">
                     <!--Carte "Hôtel Le soleil du matin"-->
