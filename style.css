@@ -792,9 +792,9 @@ footer a:hover {
     }
 }
 
-/***********************************************************/
+/********************************************************************/
 
-/****Media Queries (max-width: 768px)****/
+/**********Media Queries (max-width: 768px)**********/
 
 @media screen and (max-width: 768px) {
     main {
@@ -810,8 +810,6 @@ footer a:hover {
     }
     nav figure {
         width: 0;
-    }
-    nav figure {
         margin-left: 20px;
         margin-top: 25px;
     }
@@ -838,18 +836,9 @@ footer a:hover {
         border-color: #0065fc;
     }
     h1,
-    .text_search {
-        margin-left: 20px;
-    }
-    .margin_price_popular {
-        margin-left: 0;
-    }
-    form {
-        margin-left: 20px;
-    }
-    .filters {
-        margin-left: 20px;
-    }
+    form,
+    .text_search,
+    .filters,
     .info {
         margin-left: 20px;
     }
@@ -869,6 +858,9 @@ footer a:hover {
     }
     .img_popular {
         width: 34vw;
+    }
+    .margin_price_popular {
+        margin-left: 0;
     }
 
     /*Cartes "Hébergements à Marseille" (max-width: 768px)*/
@@ -1002,6 +994,9 @@ footer a:hover {
         margin-left: 20px;
         font-size: 1rem;
     }
+
+    /*Pied de page (max-width: 768px)*/
+
     footer {
         height: 470px;
         flex-direction: column;
@@ -1012,12 +1007,12 @@ footer a:hover {
         padding-bottom: 0px;
         margin-top: 0;
     }
+    footer h3 {
+        padding-top: 0;
+    }
     .footer_block_lodging {
         margin: 0;
         margin-bottom: 10px;
-    }
-    footer h3 {
-        padding-top: 0;
     }
 }
 
