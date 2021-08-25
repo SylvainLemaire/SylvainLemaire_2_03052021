@@ -465,7 +465,12 @@ form {
     margin-right: 3.5vw;
     margin-bottom: 50px;
 }
-.block_1 {
+.name_card_activities {
+    margin-left: 1.2vw;
+    font-size: 1em;
+}
+.block_1,
+.block_2 {
     margin-top: 8px;
     width: 45vw;
 }
@@ -475,54 +480,41 @@ form {
     justify-content: space-between;
     flex-direction: column;
 }
-.block_2 {
-    margin-top: 8px;
-    width: 45vw;
-}
-.back_activities_1 {
-    width: 21vw;
-    height: 445px;
-    border-radius: 20px;
-    margin: 0;
-}
-.back_activities_2 {
-    width: 21vw;
-    height: 240px;
-    border-radius: 20px;
-    margin: 0;
-}
-.back_activities_3 {
-    width: 21vw;
-    height: 165px;
-    border-radius: 20px;
-    margin: 0;
-}
-.back_activities_4 {
-    width: 21vw;
-    height: 445px;
-    border-radius: 20px;
-    margin: 0;
-}
-.back_activities_5 {
-    width: 21vw;
-    height: 195px;
-    border-radius: 20px;
-    margin: 0;
-}
+.back_activities_1,
+.back_activities_2,
+.back_activities_3,
+.back_activities_4,
+.back_activities_5,
 .back_activities_6 {
     width: 21vw;
-    height: 210px;
     border-radius: 20px;
     margin: 0;
 }
-
-/*Noms des cartes "Activités à Marseille"*/
-
-.name_card_activities {
-    margin-left: 1.2vw;
-    font-size: 1em;
+.back_activities_1,
+.back_activities_4 {
+    height: 445px;
 }
-
+.back_activities_2 {
+    height: 240px;
+}
+.back_activities_3 {
+    height: 165px;
+}
+.back_activities_5 {
+    height: 195px;
+}
+.back_activities_6 {
+    height: 210px;
+}
+.back_activities_1:hover,
+.back_activities_2:hover,
+.back_activities_3:hover,
+.back_activities_4:hover,
+.back_activities_5:hover,
+.back_activities_6:hover {
+    background-color: #deebff;
+    color: #0065fc;
+}
 /*Images "Activités à Marseille"*/
 
 .img_activities_1 {
@@ -530,6 +522,7 @@ form {
     height: 390px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+    margin: 0;
 }
 .img_activities_2 {
     width: 21vw;
@@ -565,33 +558,6 @@ form {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     margin: 0;
-}
-
-/*Hover cartes "Activités à Marseille"*/
-
-.back_activities_1:hover {
-    background-color: #deebff;
-    color: #0065fc;
-}
-.back_activities_2:hover {
-    background-color: #deebff;
-    color: #0065fc;
-}
-.back_activities_3:hover {
-    background-color: #deebff;
-    color: #0065fc;
-}
-.back_activities_4:hover {
-    background-color: #deebff;
-    color: #0065fc;
-}
-.back_activities_5:hover {
-    background-color: #deebff;
-    color: #0065fc;
-}
-.back_activities_6:hover {
-    background-color: #deebff;
-    color: #0065fc;
 }
 
 /***********************************************************/
@@ -668,12 +634,12 @@ footer a:hover {
 
     /*Cartes "Activités à Marseille" (max-width: 1200px)*/
 
+    .activities {
+        margin-left: 4.2vw;
+    }
     .block_activities {
         flex-direction: column;
         align-items: flex-start;
-    }
-    .activities {
-        margin-left: 4.2vw;
     }
     .block_2 {
         margin-top: 50px;
@@ -681,28 +647,34 @@ footer a:hover {
     .block_activities_2 {
         flex-direction: row;
     }
-    .back_activities_1,
+    .back_activities_1 {
+        width: 27.5vw;
+    }
+    .back_activities_4 {
+        width: 27.5vw;
+    }
     .back_activities_2,
+    .back_activities_5 {
+        width: 27.5vw;
+        height: 445px;
+        margin-left: 4.5vw;
+        margin-right: 4.5vw;
+    }
     .back_activities_3,
-    .back_activities_4,
-    .back_activities_5,
     .back_activities_6 {
         width: 27.5vw;
         height: 445px;
     }
     .img_activities_1,
+    .img_activities_4 {
+        width: 27.5vw;
+    }
     .img_activities_2,
     .img_activities_3,
-    .img_activities_4,
     .img_activities_5,
     .img_activities_6 {
         width: 27.5vw;
         height: 390px;
-    }
-    .back_activities_2,
-    .back_activities_5 {
-        margin-left: 4.5vw;
-        margin-right: 4.5vw;
     }
 
     /*Pied de page (max-width: 1200px)*/
