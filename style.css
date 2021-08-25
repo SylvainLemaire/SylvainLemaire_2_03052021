@@ -617,9 +617,9 @@ footer a:hover {
     margin-right: 4.7vw;
 }
 
-/***********************************************************/
+/*********************************************************************/
 
-/****Media Queries (max-width: 1200px)****/
+/**********Media Queries (max-width: 1200px)**********/
 
 @media screen and (max-width: 1200px) {
     /*Cartes "Les plus populaires" (max-width: 1200px)*/
@@ -637,14 +637,8 @@ footer a:hover {
         justify-content: space-evenly;
         margin-top: 8px;
     }
-    .block_popular_1 {
-        margin: 0;
-        width: 26.5vw;
-    }
-    .block_popular_2 {
-        margin: 0;
-        width: 26.5vw;
-    }
+    .block_popular_1,
+    .block_popular_2,
     .block_popular_3 {
         margin: 0;
         width: 26.5vw;
@@ -659,18 +653,15 @@ footer a:hover {
     .block_lodging {
         padding: 0;
     }
-    .block_cards_lodging_1 {
+    .block_cards_lodging_1,
+    .block_cards_lodging_2 {
         margin-left: 0;
         margin-right: 0;
     }
     .block_cards_lodging_2 {
-        margin-left: 0;
         margin-top: 10px;
-        margin-right: 0;
     }
-    .back_lodging {
-        width: 26.5vw;
-    }
+    .back_lodging,
     .img_lodging {
         width: 26.5vw;
     }
@@ -684,63 +675,37 @@ footer a:hover {
     .activities {
         margin-left: 4.2vw;
     }
-    .block_activities_2 {
-        flex-direction: row;
-    }
-    .back_activities_1 {
-        width: 27.5vw;
-    }
-    .img_activities_1 {
-        width: 27.5vw;
-    }
-    .back_activities_2 {
-        width: 27.5vw;
-        height: 445px;
-        margin-left: 4.5vw;
-        margin-right: 4.5vw;
-    }
-    .img_activities_2 {
-        width: 27.5vw;
-        height: 390px;
-    }
-    .back_activities_3 {
-        width: 27.5vw;
-        height: 445px;
-    }
-    .img_activities_3 {
-        width: 27.5vw;
-        height: 390px;
-    }
     .block_2 {
         margin-top: 50px;
     }
-    .back_activities_4 {
-        width: 27.5vw;
+    .block_activities_2 {
+        flex-direction: row;
     }
-    .img_activities_4 {
-        width: 27.5vw;
-        height: 390px;
-    }
-    .back_activities_5 {
-        width: 27.5vw;
-        height: 445px;
-        margin-left: 4.5vw;
-        margin-right: 4.5vw;
-    }
-    .img_activities_5 {
-        width: 27.5vw;
-        height: 390px;
-    }
+    .back_activities_1,
+    .back_activities_2,
+    .back_activities_3,
+    .back_activities_4,
+    .back_activities_5,
     .back_activities_6 {
         width: 27.5vw;
         height: 445px;
     }
+    .img_activities_1,
+    .img_activities_2,
+    .img_activities_3,
+    .img_activities_4,
+    .img_activities_5,
     .img_activities_6 {
         width: 27.5vw;
         height: 390px;
     }
+    .back_activities_2,
+    .back_activities_5 {
+        margin-left: 4.5vw;
+        margin-right: 4.5vw;
+    }
 
-    /*footer (max-width: 1200px)*/
+    /*Pied de page (max-width: 1200px)*/
 
     footer {
         padding-left: 4.2vw;
