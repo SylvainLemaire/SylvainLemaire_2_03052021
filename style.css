@@ -804,10 +804,16 @@ footer a:hover {
         margin: 0;
         margin-right: 20px;
     }
-    .navigation {
-        flex-direction: column;
-        width: 0;
+    h1,
+    form,
+    .text_search,
+    .filters,
+    .info {
+        margin-left: 20px;
     }
+
+    /*Navigation (max-width: 768px)*/
+
     nav figure {
         width: 0;
         margin-left: 20px;
@@ -823,24 +829,21 @@ footer a:hover {
         border-bottom: solid 4px;
         border-color: #f2f2f2;
     }
+    nav li:hover {
+        border-top: none;
+        border-color: #0065fc;
+    }
     nav li a {
         margin-top: 0;
+    }
+    .navigation {
+        flex-direction: column;
+        width: 0;
     }
     .signup {
         margin-left: 0;
         margin-top: 40px;
         margin-right: 0;
-    }
-    nav li:hover {
-        border-top: none;
-        border-color: #0065fc;
-    }
-    h1,
-    form,
-    .text_search,
-    .filters,
-    .info {
-        margin-left: 20px;
     }
 
     /*Cartes "Les plus populaires" (max-width: 768px)*/
@@ -871,18 +874,17 @@ footer a:hover {
         margin-bottom: 20px;
         padding-left: 10px;
     }
-    .block_cards_lodging_1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 0;
-    }
+    .block_cards_lodging_1,
     .block_cards_lodging_2 {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .block_cards_lodging_1 {
+        margin-bottom: 0;
+    }
+    .block_cards_lodging_2 {
         margin-top: 0;
     }
     .background_lodging {
@@ -907,85 +909,44 @@ footer a:hover {
         margin-left: 5vw;
         margin-top: 770px;
     }
-    .block_activities {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        width: 90vw;
-        height: 1240px;
-        margin-top: 30px;
-    }
-    .block_1 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        width: 90vw;
-        height: 610px;
-        margin-top: 0;
-    }
-    .block_2 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        width: 90vw;
-        height: 610px;
-        margin-top: 0;
-    }
+    .block_activities,
+    .block_1,
+    .block_2,
     .block_activities_2 {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+    }
+    .block_activities {
+        width: 90vw;
+        height: 1240px;
+        margin-top: 30px;
+    }
+    .block_1,
+    .block_2 {
+        width: 90vw;
+        height: 610px;
+        margin-top: 0;
+    }
+    .block_activities_2 {
         width: 90vw;
         height: 400px;
     }
-    .back_activities_1 {
-        width: 90vw;
-        height: 190px;
-    }
-    .img_activities_1 {
-        width: 90vw;
-        height: 135px;
-    }
-    .back_activities_2 {
-        width: 90vw;
-        height: 190px;
-    }
-    .img_activities_2 {
-        width: 90vw;
-        height: 135px;
-    }
-    .back_activities_3 {
-        width: 90vw;
-        height: 190px;
-    }
-    .img_activities_3 {
-        width: 90vw;
-        height: 135px;
-    }
-    .back_activities_4 {
-        width: 90vw;
-        height: 190px;
-    }
-    .img_activities_4 {
-        width: 90vw;
-        height: 135px;
-    }
-    .back_activities_5 {
-        width: 90vw;
-        height: 190px;
-    }
-    .img_activities_5 {
-        width: 90vw;
-        height: 135px;
-    }
+    .back_activities_1,
+    .back_activities_2,
+    .back_activities_3,
+    .back_activities_4,
+    .back_activities_5,
     .back_activities_6 {
         width: 90vw;
         height: 190px;
     }
+    .img_activities_1,
+    .img_activities_2,
+    .img_activities_3,
+    .img_activities_4,
+    .img_activities_5,
     .img_activities_6 {
         width: 90vw;
         height: 135px;
