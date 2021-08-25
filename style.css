@@ -747,12 +747,12 @@ footer a:hover {
     }
 }
 
-/************************************************************/
+/*********************************************************************/
 
-/****Media Queries (max-width: 992px)****/
+/**********Media Queries (max-width: 992px)**********/
 
 @media screen and (max-width: 992px) {
-    /*Cartes "Les plus populaires" (max-width: 992px)*/
+    /*Filtres (max-width: 992px)*/
 
     .filters_column {
         flex-direction: column;
@@ -760,6 +760,9 @@ footer a:hover {
     .buttons_filters {
         margin-bottom: 12px;
     }
+
+    /*Cartes "Les plus populaires" (max-width: 992px)*/
+
     .background_popular {
         height: 580px;
     }
@@ -776,14 +779,23 @@ footer a:hover {
     .img_popular {
         width: 34vw;
     }
+
+    /*Cartes "Hébergements à Marseille" (max-width: 992px)*/
+
     .lodging_title {
         margin-left: 0;
         padding-left: 22px;
     }
+
+    /*Cartes "Activités à Marseille" (max-width: 992px)*/
+
     .name_card_activities {
         margin-left: 1.1vw;
         font-size: 0.9rem;
     }
+
+    /*Pied de page (max-width: 992px)*/
+
     footer {
         padding-right: 18vw;
     }
