@@ -150,13 +150,13 @@ nav li {
     justify-content: center;
     height: 0;
 }
-nav a {
-    margin-top: 50px;
-    height: 0;
-}
 nav li:hover {
     border-top: solid 2px;
     color: #0065fc;
+}
+nav a {
+    margin-top: 50px;
+    height: 0;
 }
 nav a:hover {
     color: #0065fc;
@@ -234,6 +234,12 @@ form {
     border-radius: 50px;
     background-color: white;
 }
+.buttons_filters:hover {
+    background-color: #deebff;
+    color: #0065fc;
+    border-color: #deebff;
+    cursor: pointer;
+}
 .buttons_filters i {
     color: #0065fc;
     background-color: #deebff;
@@ -242,6 +248,10 @@ form {
     border-radius: 25px;
     margin-left: -6px;
 }
+.buttons_filters i:hover {
+    transform: rotate(360deg);
+    transition: 0.8s;
+}
 .name_filter {
     font-weight: bold;
     font-size: 1.15rem;
@@ -249,28 +259,10 @@ form {
     padding-right: 15px;
 }
 
-/*Hover bouttons et icônes filtres*/
-
-.buttons_filters:hover {
-    background-color: #deebff;
-    color: #0065fc;
-    border-color: #deebff;
-    cursor: pointer;
-}
-.buttons_filters i:hover {
-    transform: rotate(360deg);
-    transition: 0.8s;
-}
-
 /************************************************************/
 
 /*Info*/
 
-.text_info {
-    margin: 0;
-    margin-left: 10px;
-    padding-top: 5px;
-}
 .info {
     display: flex;
     margin-bottom: 35px;
@@ -289,10 +281,15 @@ form {
     align-items: center;
     margin: 0;
 }
+.text_info {
+    margin: 0;
+    margin-left: 10px;
+    padding-top: 5px;
+}
 
 /*************************************************************/
 
-/*Background cartes "Hébergements à Marseille"*/
+/*Cartes "Hébergements à Marseille"*/
 
 .background_lodging {
     background-color: #f2f2f2;
@@ -300,9 +297,6 @@ form {
     height: 625px;
     border-radius: 20px;
 }
-
-/*Cartes "Hébergements à Marseille"*/
-
 .lodging_title {
     margin: 0;
     margin-left: 3vw;
@@ -327,9 +321,32 @@ form {
     padding-left: 5px;
     padding-right: 5px;
 }
+.back_lodging:hover {
+    background-color: #deebff;
+}
+.img_lodging {
+    width: 16.55vw;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.figure_lodging {
+    margin: 0;
+    margin-top: 5px;
+}
 .block_description_lodging {
     padding-left: 10px;
     font-size: 0.85em;
+}
+.block_description_lodging:hover {
+    color: #0065fc;
+}
+.star_lodging {
+    display: flex;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
 }
 .margin_title_price_lodging {
     margin: 0;
@@ -345,38 +362,6 @@ form {
     color: #0065fc;
 }
 
-/*Icônes étoiles "Hébergements à Marseille"*/
-
-.star_lodging {
-    display: flex;
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 1.2em;
-}
-
-/*Images "Hébergements à Marseille"*/
-
-.img_lodging {
-    width: 16.55vw;
-    height: 115px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-}
-.figure_lodging {
-    margin: 0;
-    margin-top: 5px;
-}
-
-/*Hover cartes "Hébergements à Marseille"*/
-
-.block_description_lodging:hover {
-    color: #0065fc;
-}
-.back_lodging:hover {
-    background-color: #deebff;
-}
-
 /************************************************************/
 
 /*Cartes "Les plus populaires"*/
@@ -389,8 +374,6 @@ form {
 .fa-chart-line {
     font-size: 20px;
 }
-/*Background cartes "Les plus populaires"*/
-
 .background_popular {
     background-color: #f2f2f2;
     width: 29.2vw;
@@ -400,9 +383,7 @@ form {
 .block_popular_1 {
     margin-top: 8px;
 }
-.block_popular_2 {
-    margin-top: 32px;
-}
+.block_popular_2,
 .block_popular_3 {
     margin-top: 32px;
 }
@@ -412,17 +393,28 @@ form {
     background-color: white;
     border-radius: 20px;
 }
+.back_popular:hover {
+    background-color: #deebff;
+}
+.img_popular {
+    width: 8.8vw;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
 .block_description_popular {
     font-size: 0.85em;
     margin-left: 20px;
+}
+.block_description_popular:hover {
+    color: #0065fc;
 }
 .figure_popular {
     display: flex;
     margin: 0;
 }
-
-/*Icônes étoiles "Les plus populaires"*/
-
 .star_popular {
     margin: 0;
     display: flex;
@@ -433,26 +425,6 @@ form {
 .margin_price_popular {
     margin-top: 10px;
     margin-bottom: 40px;
-}
-
-/*Images "Les plus populaires"*/
-
-.img_popular {
-    width: 8.8vw;
-    height: 135px;
-    object-fit: cover;
-    border-radius: 15px 0 0 15px;
-    margin-left: 5px;
-    margin-top: 5px;
-}
-
-/*Hover cartes "Les plus populaires"*/
-
-.block_description_popular:hover {
-    color: #0065fc;
-}
-.back_popular:hover {
-    background-color: #deebff;
 }
 
 /***********************************************************/
@@ -515,49 +487,32 @@ form {
     background-color: #deebff;
     color: #0065fc;
 }
-/*Images "Activités à Marseille"*/
-
-.img_activities_1 {
-    width: 21vw;
-    height: 390px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    margin: 0;
-}
-.img_activities_2 {
-    width: 21vw;
-    height: 185px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    margin: 0;
-}
-.img_activities_3 {
-    width: 21vw;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    margin: 0;
-}
-.img_activities_4 {
-    width: 21vw;
-    height: 390px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    margin: 0;
-}
-.img_activities_5 {
-    width: 21vw;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    margin: 0;
-}
+.img_activities_1,
+.img_activities_2,
+.img_activities_3,
+.img_activities_4,
+.img_activities_5,
 .img_activities_6 {
     width: 21vw;
-    height: 155px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     margin: 0;
+}
+.img_activities_1,
+.img_activities_4 {
+    height: 390px;
+}
+.img_activities_2 {
+    height: 185px;
+}
+.img_activities_3 {
+    height: 110px;
+}
+.img_activities_5 {
+    height: 140px;
+}
+.img_activities_6 {
+    height: 155px;
 }
 
 /***********************************************************/
